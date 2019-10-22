@@ -1,4 +1,4 @@
-# THIS IS JUST A SAMPLE
+# THIS IS JUST A TEMPLATE
 
 # cars-machine-learning-project
 
