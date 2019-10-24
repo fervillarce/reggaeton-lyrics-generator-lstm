@@ -45,7 +45,7 @@ def scrape(url_slug):
         art_soup = BeautifulSoup(art_response.text, "html.parser")
 
         # Achicamos la búsqueda al contenedor
-        songs_container = art_soup.find("ol", {'class': 'cnt-list cnt-list--num cnt-list--col2'})
+        songs_container = art_soup.find("ul", {'class': 'cnt-list'})
 
         # Como ya hemos achicado al contenedor, buscamos el patrón que se repite. En este caso es la etiqueta "a".
         songs_html = songs_container.find_all("a")
