@@ -6,6 +6,8 @@
 El objetivo de este proyecto es generar canciones de reggaeton con una red neuronal recurrente (RNN), concretamente con LSTM (Long Short-Term Memory).
 Este trabajo corresponde al proyecto de fin de bootcamp de Data Analytics, cursado en Ironhack durante 2019.
 
+La presentación está disponible en este repositorio, en el archivo 20191026_Proyecto_IH.pdf.
+
 
 ## Files
 
@@ -145,7 +147,7 @@ La función main es la directora de orquesta. Va llamando a cada una de las func
 
 ### Resultados
 
-Los resultados son la generación de nuevas canciones de reggaeton a partir de una frase semilla y de las propias predicciones del modelo.
+Los resultados son la generación de nuevas canciones de reggaeton a partir de una frase semilla y de las propias predicciones del modelo. Estos resultados están disponibles en el archivo examples_file.txt de la carpeta Output.
 
 Como el modelo se ha entrenado con 40 epochs, se han obtenido 40 predicciones diferentes, en cada una de ellas con 4 temperatures diferentes. La temperature es el hiperparámetro de LSTM que controla la aleatoriedad de las predicciones. Se puede apreciar que a valores más grandes de temperature, los resultados son peores.
 
