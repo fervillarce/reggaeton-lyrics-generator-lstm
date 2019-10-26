@@ -121,14 +121,14 @@ Estas son las diferentes funciones:
 * **Compilar** el modelo con el tipo de pérdida, optimizador y métrica a evaluar
 
 
-### Exporación (función *sample*)
+### Obtención del valor más probable (función *sample*)
 
 Recibe las predicciones y devuelve el valor más probable.
 
 
-### Exporación (función *on_epoch_end*)
+### Generación de canciones (función *on_epoch_end*)
 
-Imprime el texto generado. Esta función de invoca al fnal de cada epoch.
+Imprime el texto generado. Esta función se invoca al final de cada epoch.
 
 
 ### Función principal (función *main*)
