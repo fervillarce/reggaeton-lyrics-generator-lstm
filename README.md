@@ -183,16 +183,16 @@ function ClickConnect(){console.log("Working");document.querySelector("colab-to
 ### Librerías
 
 En el proyecto se usan las siguientes librerías, que habrá que instalar antes de ejecutar el archivo principal:
-* pandas
 * numpy
-* sklearn
-* statsmodels
-* matplotlib
+* keras
+* pickle
+Estas librerías se pueden instalar directamente mediante el siguiente comando en la línea de comandos:
+`$ pip install -r requirements.txt`
 
 
 ### Archivos
 
-Descargar todos los archivos en la misma carpeta y ejecutar el archivo main.py (o main.ipynb).
+En caso de querer ejecutarlo en local porque se dispone de una GPU, descargar todos los archivos en la misma carpeta y ejecutar el archivo main.ipynb. Si no se dispone de una GPU, se puede subir el archivo main_colab.ipynb a Google Colab, y conectarse a una GPU de forma gratuita.
 
 
 
