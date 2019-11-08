@@ -125,12 +125,17 @@ Estas son las diferentes funciones:
 
 ### Obtención del valor más probable (función *sample*)
 
-Recibe las predicciones y devuelve el valor más probable.
+Recibe las predicciones y devuelve el índice del valor más probable.
+* Recibe una lista con las predicciones (probabilidad de cada next_character) y el hiperparámetro temperature (que controla la aleatoriedad de las predicciones).
+* Usa una distribución categórica (multinomial) para calcular el index del caracter más probable de la predicción. Este caracter será nuestro siguiente input en el modelo.
 
 
 ### Generación de canciones (función *on_epoch_end*)
 
-Imprime el texto generado. Esta función se invoca al final de cada epoch.
+Esta función se invoca al final de cada epoch.
+* Obtiene la distribución de predicciones del siguiente caracter a partir de la secuencia de entrada de 40 caracteres.
+* Llama a sample para obtener el índide del caracter más probable de esta distribución multinomial.
+* Escribe el texto generado en el archivo examples_file.txt. 
 
 
 ### Función principal (función *main*)
